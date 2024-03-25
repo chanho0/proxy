@@ -15,8 +15,6 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '@vpnhat', type: trojan, server: download2hkt.windowsupdatea.com, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, sni: glc-hkt2.windowsupdatea.com }
-    - { name: '@EXM3U', type: trojan, server: download2hkt.windowsupdatea.com, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, sni: glc-hkt2.windowsupdatea.com }
     - { name: '台湾Hinet | 解锁流媒体', type: trojan, server: glc.g.tw.download.windowsupdatea.com, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, sni: glc-tw1.windowsupdatea.com }
     - { name: '香港HKT | 解锁流媒体', type: trojan, server: hkt.g.hk.download.windowsupdatea.com, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, sni: glc-hkt1.windowsupdatea.com }
     - { name: '香港HKT2 | 解锁流媒体', type: trojan, server: hkt.g.hk2.download.windowsupdatea.com, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, sni: glc-hkt2.windowsupdatea.com }
@@ -27,3 +25,50 @@ proxies:
     - { name: '德国 | 解锁流媒体', type: trojan, server: 77.75.199.233, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, network: ws, ws-opts: { path: /guolicheng/de, headers: { Host: glc-de.glccf.top } }, sni: glc-de.glccf.top }
     - { name: '法国 | 解锁流媒体', type: trojan, server: 77.75.199.33, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, network: ws, ws-opts: { path: /guolicheng/fr, headers: { Host: fr1.glccf.top } }, sni: fr1.glccf.top }
     - { name: 土耳其, type: trojan, server: 77.75.199.134, port: 443, password: 11e2ecbd-1107-45c5-beb5-36535cd0735f, udp: true, network: ws, ws-opts: { path: /guolicheng/tr1, headers: { Host: glc-tr1.glccf.top } }, sni: glc-tr1.glccf.top }
+
+    - { name: '🇭🇰 香港 IEPL 01 | x4', type: ss, server: chinact.one.edu.kg, port: 20001, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇭🇰 香港 IEPL 02 | x4', type: ss, server: chinact.one.edu.kg, port: 20002, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 IEPL 01 | x4', type: ss, server: chinact.one.edu.kg, port: 20003, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 IEPL 02 | x4', type: ss, server: chinact.one.edu.kg, port: 20004, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 IEPL 01 | x4', type: ss, server: chinact.one.edu.kg, port: 20005, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 IEPL 02 | x4', type: ss, server: chinact.one.edu.kg, port: 20006, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇨🇳 台湾 IEPL 01 | x4', type: ss, server: chinact.one.edu.kg, port: 20007, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇨🇳 台湾 IEPL 02 | x4', type: ss, server: chinact.one.edu.kg, port: 20008, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇭🇰 香港 01', type: trojan, server: cn1.one.edu.kg, port: 12001, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true, skip-cert-verify: true }
+    - { name: '🇭🇰 香港 02', type: trojan, server: cn1.one.edu.kg, port: 12002, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true, skip-cert-verify: true }
+    - { name: '🇭🇰 香港 03', type: trojan, server: cn1.one.edu.kg, port: 12003, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true, skip-cert-verify: true }
+    - { name: '🇭🇰 香港 04', type: ss, server: cn1.one.edu.kg, port: 12004, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇭🇰 香港 05', type: ss, server: cn1.one.edu.kg, port: 12005, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇭🇰 香港 06', type: ss, server: cn1.one.edu.kg, port: 12006, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇨🇳 台湾 01', type: ss, server: cn1.one.edu.kg, port: 12011, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇨🇳 台湾 02', type: ss, server: cn1.one.edu.kg, port: 12012, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 01', type: ss, server: china2.one.edu.kg, port: 12021, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 02', type: ss, server: china2.one.edu.kg, port: 12022, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 03', type: ss, server: china2.one.edu.kg, port: 12023, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 04', type: ss, server: china2.one.edu.kg, port: 12024, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇬 新加坡 05', type: ss, server: china2.one.edu.kg, port: 12025, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 01', type: ss, server: china3.one.edu.kg, port: 12031, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 02', type: ss, server: china3.one.edu.kg, port: 12032, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 03', type: ss, server: china3.one.edu.kg, port: 12033, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 04', type: ss, server: china3.one.edu.kg, port: 12034, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇯🇵 日本 05', type: ss, server: china3.one.edu.kg, port: 12035, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇺🇸 美国 01', type: ss, server: china3.one.edu.kg, port: 12051, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇺🇸 美国 02', type: ss, server: china3.one.edu.kg, port: 12052, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇺🇸 美国 03', type: ss, server: china3.one.edu.kg, port: 12053, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇺🇸 美国 04', type: ss, server: china3.one.edu.kg, port: 12054, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇺🇸 美国 05', type: ss, server: china3.one.edu.kg, port: 12055, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇰🇷 韩国 01', type: ss, server: china3.one.edu.kg, port: 12041, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇮🇩 印尼 01', type: ss, server: china2.one.edu.kg, port: 12061, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇮🇹 意大利 01', type: ss, server: china4.one.edu.kg, port: 12062, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇹🇷 土耳其 01', type: ss, server: china4.one.edu.kg, port: 12064, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇫🇷 法国 01', type: ss, server: china4.one.edu.kg, port: 12065, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇦🇷 阿根廷 01', type: ss, server: china4.one.edu.kg, port: 12066, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇲🇾 马来西亚 01', type: ss, server: china2.one.edu.kg, port: 12067, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇦🇺 澳大利亚 01', type: ss, server: china2.one.edu.kg, port: 12068, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇬🇧 英国 01', type: ss, server: china4.one.edu.kg, port: 12069, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇩🇪 德国 01', type: ss, server: china4.one.edu.kg, port: 12070, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇸🇪 瑞典 01', type: ss, server: china4.one.edu.kg, port: 12071, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇮🇳 印度 01', type: ss, server: china2.one.edu.kg, port: 12072, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇳🇬 尼日利亚 01', type: ss, server: china4.one.edu.kg, port: 12073, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇳🇱 荷兰 01', type: ss, server: china4.one.edu.kg, port: 12074, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
+    - { name: '🇷🇺 俄罗斯01', type: ss, server: china4.one.edu.kg, port: 12075, cipher: aes-128-gcm, password: 13937015-1410-482f-a6f5-12d2153e76fe, udp: true }
