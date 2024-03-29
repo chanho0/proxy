@@ -60,3 +60,473 @@ proxies:
     - { name: 🇦🇪~WF~AEˣ⁰, type: vmess, server: ls.wvw.mom, port: 34237, uuid: cc2abd05-9ab4-46cc-aa7e-4c8a6aa6ebdc, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: ae.k8s.now.cc, network: grpc, grpc-opts: { grpc-service-name: aeyydsrongseven } }
     - { name: 🇬🇧~WF~UKˣ⁰, type: vmess, server: ls.wvw.mom, port: 34237, uuid: cc2abd05-9ab4-46cc-aa7e-4c8a6aa6ebdc, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: uk.wvw.mom, network: grpc, grpc-opts: { grpc-service-name: ukyydsrongseven } }
     - { name: 🇭🇰~WF~HKˣ⁰, type: vmess, server: ls.wvw.mom, port: 34237, uuid: cc2abd05-9ab4-46cc-aa7e-4c8a6aa6ebdc, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: hk.wvw.mom, network: grpc, grpc-opts: { grpc-service-name: hkyydsrongseven } }
+
+  -
+    name: '🇹🇼 v0丨免费丨台湾丨01'
+    type: trojan
+    server: tt02.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: tw.allzhen.com
+  -
+    name: '🇹🇼 v0丨免费丨台湾丨02'
+    type: trojan
+    server: tt01.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: tw02.kulime.space
+  -
+    name: '🇷🇺 火箭丨俄罗斯丨莫斯科丨'
+    type: trojan
+    server: els01.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: els1.kulime.space
+  -
+    name: '🇮🇳 火箭丨印度丨孟买'
+    type: trojan
+    server: ydzhongzhuan.alljie.space
+    port: 52027
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: yindu1.kulime.space
+  -
+    name: '🇹🇼 火箭丨台湾丨BGP中继丨01丨原生丨600Mbps'
+    type: trojan
+    server: tw05.alljie.space
+    port: 52037
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: zhanghua.kulime.space
+  -
+    name: '🇹🇼 火箭丨台湾丨BGP中继丨02丨原生丨600Mbps'
+    type: trojan
+    server: bgptw02.alljie.space
+    port: 52038
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: taiwjing.allzhen.com
+  -
+    name: '🇹🇼 火箭丨台湾丨Trojan丨静丨深台中继3'
+    type: trojan
+    server: vip2shentai.alljie.space
+    port: 32103
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: taiwjing.allzhen.com
+  -
+    name: '🇹🇼 火箭丨台湾丨原生丨Trojan丨静态'
+    type: trojan
+    server: taiwjing.alljie.space
+    port: 55446
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: taiwjing.allzhen.com
+  -
+    name: '🇹🇼 火箭丨台湾丨原生丨三网直连'
+    type: trojan
+    server: tw03.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: tw03zhuan.kulime.space
+  -
+    name: '🇹🇼 火箭丨台湾丨原生丨深台中继丨1'
+    type: trojan
+    server: st01.alljie.space
+    port: 52004
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: tw02.kulime.space
+  -
+    name: '🇹🇼 火箭丨台湾丨原生丨深台中继丨2'
+    type: trojan
+    server: st02.alljie.space
+    port: 52006
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: tw.allzhen.com
+  -
+    name: '🇹🇼 火箭丨台湾丨原生丨深台中转'
+    type: trojan
+    server: v1tw01.alljie.space
+    port: 52035
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: tw02.kulime.space
+  -
+    name: '🇹🇼 火箭丨台湾丨彰化丨600m'
+    type: trojan
+    server: zhanghua.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: zhanghua.kulime.space
+  -
+    name: '🇩🇪 火箭丨德国丨3x'
+    type: trojan
+    server: yuenan.alljie.space
+    port: 11154
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: yuenadjkdc.kulime.space
+  -
+    name: '🇸🇬 火箭丨新加坡丨深新中继丨1Gbps'
+    type: trojan
+    server: xinjp.alljie.space
+    port: 10018
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: xjp.allzhen.com
+  -
+    name: '🇸🇬 火箭丨新加坡丨湖南-新加坡丨中继'
+    type: trojan
+    server: hunan.alljie.space
+    port: 10018
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: xjp.allzhen.com
+  -
+    name: '🇯🇵 火箭丨日本IIJ丨沪日中继02丨原生'
+    type: trojan
+    server: jp05.alljie.space
+    port: 52021
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: yinghua02.allzhen.com
+  -
+    name: '🇯🇵 火箭丨日本IIJ丨沪日中继丨原生'
+    type: trojan
+    server: jp05.alljie.space
+    port: 10014
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: gujspaskjnc.kulime.space
+  -
+    name: '🇨🇳 火箭丨日本丨上海-日本ntt丨中继'
+    type: trojan
+    server: shlt.alljie.space
+    port: 52026
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: yinghua02.allzhen.com
+  -
+    name: '🇨🇳 火箭丨日本丨原生丨上海-日本丨3x'
+    type: trojan
+    server: changsha.alljie.space
+    port: 52011
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: gujspaskjnc.kulime.space
+  -
+    name: '🇯🇵 火箭丨日本丨原生丨深日中继'
+    type: trojan
+    server: srzhongji.alljie.space
+    port: 52014
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: gujspaskjnc.kulime.space
+  -
+    name: '🇯🇵 火箭丨日本丨湖南-大阪丨中继'
+    type: trojan
+    server: azjp.alljie.space
+    port: 52040
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: yinghua02.allzhen.com
+  -
+    name: '🇫🇷 火箭丨法国丨巴黎丨AWS'
+    type: trojan
+    server: faguo.yuncyo.xyz
+    port: 50021
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇺🇲 火箭丨美国丨BGP中继丨01丨原生'
+    type: trojan
+    server: usz.alljie.space
+    port: 32392
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: us03.allzhen.com
+  -
+    name: '🇺🇲 火箭丨美国丨微软丨03丨原生'
+    type: trojan
+    server: us04.alljie.space
+    port: 5443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: us03.allzhen.com
+  -
+    name: '🇺🇲 火箭丨美国丨微软丨沪美中继'
+    type: trojan
+    server: bgp1.alljie.space
+    port: 52007
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: us03.allzhen.com
+  -
+    name: '🇺🇲 火箭丨美国丨洛杉矶丨原生丨直连'
+    type: trojan
+    server: azus06.alljie.space
+    port: 11153
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: us03.allzhen.com
+  -
+    name: '🇺🇲 火箭丨美国丨直连'
+    type: trojan
+    server: us02.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: us03.allzhen.com
+  -
+    name: '🇬🇧 火箭丨英国丨伦敦丨AWS'
+    type: trojan
+    server: yingguo.yuncyo.xyz
+    port: 52111
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇰🇷 火箭丨韩国丨微软丨沪韩中继丨原生丨1Gbps'
+    type: trojan
+    server: huhan01.alljie.space
+    port: 52348
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hanguo1.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨BGP中继丨01丨HKT丨1Gbps'
+    type: trojan
+    server: v2bgp01.alljie.space
+    port: 52039
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk10.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨BGP中继丨02丨HKT丨1Gbps'
+    type: trojan
+    server: bgpwr.alljie.space
+    port: 11152
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨BGP中继丨03丨HKT丨1Gbps'
+    type: trojan
+    server: zhongji03.alljie.space
+    port: 10023
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hgc03.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨BGP中继丨04丨流媒体专用'
+    type: trojan
+    server: v2bgp04.alljie.space
+    port: 52020
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hknetflix.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨BGP中继丨05丨深港丨1Gbps'
+    type: trojan
+    server: hugang03.alljie.space
+    port: 20025
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk111.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨BGP微软丨1丨1Gbps'
+    type: trojan
+    server: bgp01.alljie.space
+    port: 32406
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az02vip3.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨BGP微软丨2x'
+    type: trojan
+    server: bgpwz02.alljie.space
+    port: 20000
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az100.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨HGC丨原生丨移动中继'
+    type: trojan
+    server: guangzhou.alljie.space
+    port: 52100
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨HKG丨原生丨移动优化丨'
+    type: trojan
+    server: hk05.alljie.space
+    port: 45445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨HKT丨02丨原生丨直连'
+    type: trojan
+    server: hk020.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: adsvsccc.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨HKT丨3丨2Gbps'
+    type: trojan
+    server: az04.yuncyo.xyz
+    port: 56445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az04asdcadcwcwqfrg.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨Trojan丨原生'
+    type: trojan
+    server: hk101.alljie.space
+    port: 5443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk10.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨三网优化丨2'
+    type: trojan
+    server: az03.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk111.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨1'
+    type: trojan
+    server: hk04.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk04.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨2'
+    type: trojan
+    server: hk07.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: safwv07dawjncwsdc.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨3'
+    type: trojan
+    server: v1az03.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: v1az03.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨4'
+    type: trojan
+    server: hk08.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨5'
+    type: trojan
+    server: az05feiy.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: fy05dascefbb.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨6'
+    type: trojan
+    server: az06dcjhh.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az06kdhcbsja.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨7'
+    type: trojan
+    server: az01.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az01dacjdcndacc.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨三网直连丨9'
+    type: trojan
+    server: hk06.alljie.space
+    port: 443
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk06.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨专线丨原生丨3x'
+    type: trojan
+    server: dmit.alljie.space
+    port: 20028
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk111.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨原生丨湖南-香港丨中继'
+    type: trojan
+    server: changsha01.alljie.space
+    port: 52017
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk10.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨微軟丨广州中继'
+    type: trojan
+    server: guang01.alljie.space
+    port: 32370
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨微软丨2Gbps'
+    type: trojan
+    server: az05.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az05dasjhcjbjsfc.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨微软丨Trojan丨移动中继'
+    type: trojan
+    server: guangzhouw.alljie.space
+    port: 52001
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az100.kulime.space
+  -
+    name: '🇨🇳 火箭丨香港丨微软丨上海-香港丨'
+    type: trojan
+    server: bgp.alljie.space
+    port: 52009
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az05dasjhcjbjsfc.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨徽港中继丨1'
+    type: trojan
+    server: huig01.alljie.space
+    port: 10025
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az02vip3.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨徽港中继丨2'
+    type: trojan
+    server: huig02.alljie.space
+    port: 10030
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az02vip3.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨徽港中继丨3'
+    type: trojan
+    server: huig03.alljie.space
+    port: 10027
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az02vip3.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨徽港中继丨4'
+    type: trojan
+    server: huig04.alljie.space
+    port: 10028
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az02vip3.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨沪港中继丨4丨3x'
+    type: trojan
+    server: v1hugang4.alljie.space
+    port: 11151
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk05.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨沪港中继丨5 丨3x'
+    type: trojan
+    server: v1hugang5.alljie.space
+    port: 10029
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk06.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨深港中继2丨3x'
+    type: trojan
+    server: huig05.alljie.space
+    port: 10029
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: az02vip3.kulime.space
+  -
+    name: '🇭🇰 火箭丨香港丨深港中继丨3x'
+    type: trojan
+    server: v1shengang.alljie.space
+    port: 52016
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: vd.allzhen.com
+  -
+    name: '🇭🇰 火箭丨香港丨移动专用丨万M光口'
+    type: trojan
+    server: hgc05.alljie.space
+    port: 55445
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: hk111.kulime.space
+  -
+    name: '🇲🇾 火箭丨马来西亚丨原生丨移动中继'
+    type: trojan
+    server: malai01.alljie.space
+    port: 52036
+    password: 66e0e142-814b-3223-9fa4-91c0edc9043b
+    sni: my.allzhen.com
