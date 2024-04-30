@@ -15,8 +15,6 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '@vpnhat', type: vmess, server: yes.cnmjcn.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: '@EXM3U', type: vmess, server: yes.cnmjcn.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
     - { name: 日本-优化-GPT, type: vmess, server: yes.cnmjcn.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
     - { name: 日本-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
     - { name: 日本-优化3-GPT, type: vmess, server: t.cnmjcn.cyou, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
