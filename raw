@@ -15,126 +15,52 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 🇦🇺 AU澳大利亚1, type: ss, server: 120.199.94.29, port: 27254, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇦🇺 AU澳大利亚2, type: ss, server: 120.199.94.30, port: 27254, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇦🇺 AU澳大利亚3, type: ss, server: 36.212.129.234, port: 27254, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇦🇺 AU澳大利亚4, type: ss, server: 36.212.129.235, port: 27254, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇦🇺 AU澳大利亚5, type: ss, server: 36.212.237.146, port: 27254, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇨🇦 CA加拿大1, type: ss, server: 120.199.94.29, port: 27256, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇨🇦 CA加拿大2, type: ss, server: 120.199.94.30, port: 27256, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇨🇦 CA加拿大3, type: ss, server: 36.212.129.234, port: 27256, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇨🇦 CA加拿大4, type: ss, server: 36.212.129.235, port: 27256, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇨🇦 CA加拿大5, type: ss, server: 36.212.237.146, port: 27256, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇩🇪 DE德国1, type: ss, server: 120.199.94.29, port: 27257, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇩🇪 DE德国2, type: ss, server: 120.199.94.30, port: 27257, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇩🇪 DE德国3, type: ss, server: 36.212.129.234, port: 27257, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇩🇪 DE德国4, type: ss, server: 36.212.129.235, port: 27257, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇩🇪 DE德国5, type: ss, server: 36.212.237.146, port: 27257, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇬🇧 GB英国1, type: ss, server: 120.199.94.29, port: 27255, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇬🇧 GB英国2, type: ss, server: 120.199.94.30, port: 27255, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇬🇧 GB英国3, type: ss, server: 36.212.129.234, port: 27255, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇬🇧 GB英国4, type: ss, server: 36.212.129.235, port: 27255, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇬🇧 GB英国5, type: ss, server: 36.212.237.146, port: 27255, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇭🇰 HK香港1, type: ss, server: 120.199.94.29, port: 27259, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇭🇰 HK香港2, type: ss, server: 120.199.94.30, port: 27259, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇭🇰 HK香港3, type: ss, server: 36.212.129.234, port: 27259, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇭🇰 HK香港4, type: ss, server: 36.212.129.235, port: 27259, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇭🇰 HK香港5, type: ss, server: 36.212.237.146, port: 27259, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇮🇳 IN印度1, type: ss, server: 120.199.94.29, port: 27252, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇮🇳 IN印度2, type: ss, server: 120.199.94.30, port: 27252, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇮🇳 IN印度3, type: ss, server: 36.212.129.234, port: 27252, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇮🇳 IN印度4, type: ss, server: 36.212.129.235, port: 27252, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇮🇳 IN印度5, type: ss, server: 36.212.237.146, port: 27252, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇯🇵 JP日本1, type: ss, server: 120.199.94.29, port: 27251, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇯🇵 JP日本2, type: ss, server: 120.199.94.30, port: 27251, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇯🇵 JP日本3, type: ss, server: 36.212.129.234, port: 27251, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇯🇵 JP日本4, type: ss, server: 36.212.129.235, port: 27251, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇯🇵 JP日本5, type: ss, server: 36.212.237.146, port: 27251, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇭 KH柬埔寨1, type: ss, server: 120.199.94.29, port: 27272, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇭 KH柬埔寨2, type: ss, server: 120.199.94.30, port: 27272, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇭 KH柬埔寨3, type: ss, server: 36.212.129.234, port: 27272, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇭 KH柬埔寨4, type: ss, server: 36.212.129.235, port: 27272, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇭 KH柬埔寨5, type: ss, server: 36.212.237.146, port: 27272, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇷 KR韩国1, type: ss, server: 120.199.94.29, port: 27262, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇷 KR韩国2, type: ss, server: 120.199.94.30, port: 27262, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇷 KR韩国3, type: ss, server: 36.212.129.234, port: 27262, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇷 KR韩国4, type: ss, server: 36.212.129.235, port: 27262, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇰🇷 KR韩国5, type: ss, server: 36.212.237.146, port: 27262, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇲 MM缅甸1, type: ss, server: 120.199.94.29, port: 27273, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇲 MM缅甸2, type: ss, server: 120.199.94.30, port: 27273, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇲 MM缅甸3, type: ss, server: 36.212.129.234, port: 27273, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇲 MM缅甸4, type: ss, server: 36.212.129.235, port: 27273, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇲 MM缅甸5, type: ss, server: 36.212.237.146, port: 27273, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇾 MY马来西亚1, type: ss, server: 120.199.94.29, port: 27278, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇾 MY马来西亚2, type: ss, server: 120.199.94.30, port: 27278, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇾 MY马来西亚3, type: ss, server: 36.212.129.234, port: 27278, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇾 MY马来西亚4, type: ss, server: 36.212.129.235, port: 27278, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇲🇾 MY马来西亚5, type: ss, server: 36.212.237.146, port: 27278, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇳🇮 NI阿根廷1, type: ss, server: 120.199.94.29, port: 27271, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇳🇮 NI阿根廷2, type: ss, server: 120.199.94.30, port: 27271, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇳🇮 NI阿根廷3, type: ss, server: 36.212.129.234, port: 27271, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇳🇮 NI阿根廷4, type: ss, server: 36.212.129.235, port: 27271, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇳🇮 NI阿根廷5, type: ss, server: 36.212.237.146, port: 27271, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇵🇭 PH菲律宾1, type: ss, server: 120.199.94.29, port: 27274, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇵🇭 PH菲律宾2, type: ss, server: 120.199.94.30, port: 27274, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇵🇭 PH菲律宾3, type: ss, server: 36.212.129.234, port: 27274, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇵🇭 PH菲律宾4, type: ss, server: 36.212.129.235, port: 27274, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇵🇭 PH菲律宾5, type: ss, server: 36.212.237.146, port: 27274, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇷🇺 RU俄罗斯1, type: ss, server: 120.199.94.29, port: 27276, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇷🇺 RU俄罗斯2, type: ss, server: 120.199.94.30, port: 27276, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇷🇺 RU俄罗斯3, type: ss, server: 36.212.129.234, port: 27276, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇷🇺 RU俄罗斯4, type: ss, server: 36.212.129.235, port: 27276, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇷🇺 RU俄罗斯5, type: ss, server: 36.212.237.146, port: 27276, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡1, type: ss, server: 120.199.94.29, port: 27250, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡2, type: ss, server: 120.199.94.30, port: 27250, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡3, type: ss, server: 36.212.129.234, port: 27250, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡4, type: ss, server: 36.212.129.235, port: 27250, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡5, type: ss, server: 36.212.237.146, port: 27250, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡6, type: ss, server: 120.199.94.29, port: 27261, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡7, type: ss, server: 120.199.94.30, port: 27261, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡8, type: ss, server: 36.212.129.234, port: 27261, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡9, type: ss, server: 36.212.129.235, port: 27261, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇸🇬 SG新加坡10, type: ss, server: 36.212.237.146, port: 27261, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇭 TH泰国1, type: ss, server: 120.199.94.29, port: 27275, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇭 TH泰国2, type: ss, server: 120.199.94.30, port: 27275, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇭 TH泰国3, type: ss, server: 36.212.129.234, port: 27275, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇭 TH泰国4, type: ss, server: 36.212.129.235, port: 27275, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇭 TH泰国5, type: ss, server: 36.212.237.146, port: 27275, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇷 TR土耳其1, type: ss, server: 120.199.94.29, port: 27267, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇷 TR土耳其2, type: ss, server: 120.199.94.30, port: 27267, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇷 TR土耳其3, type: ss, server: 36.212.129.234, port: 27267, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇷 TR土耳其4, type: ss, server: 36.212.129.235, port: 27267, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇷 TR土耳其5, type: ss, server: 36.212.237.146, port: 27267, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾1, type: ss, server: 120.199.94.29, port: 27260, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾2, type: ss, server: 120.199.94.30, port: 27260, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾3, type: ss, server: 36.212.129.234, port: 27260, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾4, type: ss, server: 36.212.129.235, port: 27260, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾5, type: ss, server: 36.212.237.146, port: 27260, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾6, type: ss, server: 120.199.94.29, port: 27279, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾7, type: ss, server: 120.199.94.30, port: 27279, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾8, type: ss, server: 36.212.129.234, port: 27279, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾9, type: ss, server: 36.212.129.235, port: 27279, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇹🇼 TW台湾10, type: ss, server: 36.212.237.146, port: 27279, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰1, type: ss, server: 120.199.94.29, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰2, type: ss, server: 120.199.94.30, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰3, type: ss, server: 36.212.129.234, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰4, type: ss, server: 36.212.129.235, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰5, type: ss, server: 36.212.237.146, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰6, type: ss, server: 120.199.94.29, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰7, type: ss, server: 120.199.94.30, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰8, type: ss, server: 36.212.129.234, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰9, type: ss, server: 36.212.129.235, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇦 UA乌克兰10, type: ss, server: 36.212.237.146, port: 27268, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇸 US美国1, type: ss, server: 120.199.94.29, port: 27253, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇸 US美国2, type: ss, server: 120.199.94.30, port: 27253, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇸 US美国3, type: ss, server: 36.212.129.234, port: 27253, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇸 US美国4, type: ss, server: 36.212.129.235, port: 27253, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇺🇸 US美国5, type: ss, server: 36.212.237.146, port: 27253, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇻🇳 VN越南1, type: ss, server: 120.199.94.29, port: 27277, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇻🇳 VN越南2, type: ss, server: 120.199.94.30, port: 27277, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇻🇳 VN越南3, type: ss, server: 36.212.129.234, port: 27277, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇻🇳 VN越南4, type: ss, server: 36.212.129.235, port: 27277, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
-    - { name: 🇻🇳 VN越南5, type: ss, server: 36.212.237.146, port: 27277, cipher: chacha20-ietf-poly1305, password: d3c7f55f-e2af-4114-b0a3-058d219e2992, udp: true }
+    - { name: '@vpnhat', type: vmess, server: yes.cnmjcn.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: '@EXM3U', type: vmess, server: yes.cnmjcn.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 日本-优化-GPT, type: vmess, server: yes.cnmjcn.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 日本-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 日本-优化3-GPT, type: vmess, server: t.cnmjcn.cyou, port: 16617, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 日本JP-T-GPT, type: trojan, server: jp.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: jp.mjt000.com }
+    - { name: 新加坡SG-T, type: trojan, server: sg.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: sg.mjt000.com }
+    - { name: 柬埔寨KH-T, type: trojan, server: kh.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: kh.mjt000.com }
+    - { name: 美国USLA-T-GPT, type: trojan, server: usla.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: usla.mjt000.com }
+    - { name: 新加坡-优化-GPT, type: vmess, server: yes.cnmjcn.net, port: 16618, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 新加坡-优化2, type: vmess, server: m.cnmjin.net, port: 16618, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 新加坡-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16618, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 香港HY-优化, type: vmess, server: yes.cnmjcn.net, port: 16632, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 香港HY-优化2, type: vmess, server: m.cnmjin.net, port: 16632, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 香港wap-T, type: trojan, server: waphk.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: waphk.mjt000.com }
+    - { name: 台湾WAP-T, type: trojan, server: hinet.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: hinet.mjt000.com }
+    - { name: 越南VN-T, type: trojan, server: vn.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: vn.mjt000.com }
+    - { name: 香港WAP-优化, type: vmess, server: yes.cnmjcn.net, port: 16622, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 香港WAP-优化2, type: vmess, server: m.cnmjin.net, port: 16622, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 香港HKT-优化2, type: vmess, server: m.cnmjin.net, port: 16620, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 印度-优化, type: vmess, server: yes.cnmjcn.net, port: 16626, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 台湾-优化, type: vmess, server: yes.cnmjcn.net, port: 16616, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 台湾-优化2, type: vmess, server: m.cnmjin.net, port: 16616, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 台湾-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16616, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 朝鲜-优化2, type: vmess, server: m.cnmjin.net, port: 16628, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 朝鲜-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16628, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 美国LA-优化-GPT, type: vmess, server: yes.cnmjcn.net, port: 16648, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 美国LA-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16648, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 美国LA-优化3-GPT, type: vmess, server: t.cnmjcn.cyou, port: 16648, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 英国-优化, type: vmess, server: yes.cnmjcn.net, port: 16645, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 英国-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16645, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 英国-优化3-GPT, type: vmess, server: t.cnmjcn.cyou, port: 16645, uuid: e1745773-30d1-40c9-9680-55abb00286a0, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: 06e5ee432fceed1344795bc9a870860e.mobgslb.tbcache.com } }
+    - { name: 澳大利亚AU-T, type: trojan, server: au.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: au.mjt000.com }
+    - { name: 土耳其TR-T, type: trojan, server: tr.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: tr.mjt000.com }
+    - { name: 卢森堡LUX-T, type: trojan, server: lux.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: lux.mjt000.com }
+    - { name: 韩国KR-T, type: trojan, server: kr.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: kr.mjt000.com }
+    - { name: 意大利IT-T, type: trojan, server: it.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: it.mjt000.com }
+    - { name: 葡萄牙PT-T, type: trojan, server: pt.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: pt.mjt000.com }
+    - { name: 俄罗斯RU-T, type: trojan, server: ru.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: ru.mjt000.com }
+    - { name: 哈萨克斯坦KZ-T, type: trojan, server: kz.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: kz.mjt000.com }
+    - { name: 乌克兰UA-T, type: trojan, server: ua.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: ua.mjt000.com }
+    - { name: 以色列IL-T, type: trojan, server: il.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: il.mjt000.com }
+    - { name: 英国UK-T, type: trojan, server: uk.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: uk.mjt000.com }
+    - { name: 阿根廷AR-T, type: trojan, server: ar.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: ar.mjt000.com }
+    - { name: 尼日利亚NI-T, type: trojan, server: ni.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: ni.mjt000.com }
+    - { name: 迪拜D-T, type: trojan, server: di.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: di.mjt000.com }
 
     - { name: '荷兰01 | Global |  0.3X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: nl_v1.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: nl_v1.nmsl.edu.pl } }
     - { name: '1元 | 美国 | 0.3X', type: ss, server: zf-lemontec-us1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
