@@ -60,22 +60,19 @@ proxies:
     - { name: 尼日利亚NI-T, type: trojan, server: ni.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: ni.mjt000.com }
     - { name: 迪拜D-T, type: trojan, server: di.mjt000.com, port: 443, password: e1745773-30d1-40c9-9680-55abb00286a0, udp: true, sni: di.mjt000.com }
 
+    - { name: '日本08 | DIRECT | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '荷兰01 | Global |  0.3X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: nl_v1.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: nl_v1.nmsl.edu.pl } }
-    - { name: '1元 | 美国 | 0.3X', type: ss, server: zf-lemontec-us1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '1元 | 新加坡 | 0.3X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '1元 | 香港 | 0.3X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10002, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '1元 | 加拿大| 0.3X', type: ss, server: zf-lemontec-us1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟1号 | 迪拜 | ARM | 1G | CN | 0.3X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10003, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '1元 | 美国 | 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '1元 | 新加坡 | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '1元 | 香港 | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10002, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '1元 | 加拿大| 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '龟龟1号 | 迪拜 | ARM | 1G | CN | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10003, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '龟龟2号 | 迪拜 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_ae.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_ae.nmsl.edu.pl } }
-    - { name: '龟龟3号 | 圣保罗 | AMD | 500M | CN | 0.3X', type: ss, server: zf-lemontec-us1.8top.top, port: 10002, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '龟龟3号 | 圣保罗 | AMD | 500M | CN | 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10002, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '龟龟4号 | 圣保罗 | AMD | 500M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_br.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_br.nmsl.edu.pl } }
-    - { name: '龟龟5号 | 法兰克福 | AMD | 50M | CN | 0.3X', type: ss, server: zf-lemontec-de1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '龟龟5号 | 法兰克福 | AMD | 50M | CN | 0.1X', type: ss, server: zf-lemontec-de1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '龟龟6号 | 法兰克福 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_de.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_de.nmsl.edu.pl } }
-    - { name: '龟龟7号 | 春川 | AMD | 50M | CN | 0.3X', type: ss, server: zf-lemontec-kr1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟8号 | 春川 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_cc.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_cc.nmsl.edu.pl } }
-    - { name: '龟龟9号 | 孟买 | AMD | 500M | CN | 0.3X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10004, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '龟龟9号 | 孟买 | AMD | 500M | CN | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10004, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '龟龟10号 | 孟买 | AMD | 500M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_mm.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_mm.nmsl.edu.pl } }
-    - { name: '龟龟11号 | 圣何塞 | AMD | 50M | CN | 0.3X', type: ss, server: zf-lemontec-us1.8top.top, port: 10003, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
+    - { name: '龟龟11号 | 圣何塞 | AMD | 50M | CN | 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10003, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '龟龟12号 | 圣何塞 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_sjc.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_sjc.nmsl.edu.pl } }
-    - { name: '龟龟13号 | 南非 | ARM | 1G | CN | 0.3X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10005, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟14号 | 南非 | ARM | 1G | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_sa.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_sa.nmsl.edu.pl } }
