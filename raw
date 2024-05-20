@@ -15,30 +15,1133 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - name: 尼日利亚
-        type: ss
-        server: cn17.mynode.me
-        port: 8625
-        cipher: chacha20-ietf
-        password: passwd
-        plugin: obfs
-        plugin-opts:
-        mode: http
-        host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
-
-    - { name: '日本08 | DIRECT | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '荷兰01 | Global |  0.3X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: nl_v1.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: nl_v1.nmsl.edu.pl } }
-    - { name: '1元 | 美国 | 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '1元 | 新加坡 | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '1元 | 香港 | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10002, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '1元 | 加拿大| 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10001, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟1号 | 迪拜 | ARM | 1G | CN | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10003, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟2号 | 迪拜 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_ae.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_ae.nmsl.edu.pl } }
-    - { name: '龟龟3号 | 圣保罗 | AMD | 500M | CN | 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10002, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟4号 | 圣保罗 | AMD | 500M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_br.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_br.nmsl.edu.pl } }
-    - { name: '龟龟5号 | 法兰克福 | AMD | 50M | CN | 0.1X', type: ss, server: zf-lemontec-de1.8top.top, port: 10000, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟6号 | 法兰克福 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_de.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_de.nmsl.edu.pl } }
-    - { name: '龟龟9号 | 孟买 | AMD | 500M | CN | 0.1X', type: ss, server: zf-lemontec-jp1.8top.top, port: 10004, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟10号 | 孟买 | AMD | 500M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_mm.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_mm.nmsl.edu.pl } }
-    - { name: '龟龟11号 | 圣何塞 | AMD | 50M | CN | 0.1X', type: ss, server: zf-lemontec-us1.8top.top, port: 10003, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
-    - { name: '龟龟12号 | 圣何塞 | AMD | 50M | 国际 | 0.1X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gg_sjc.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: gg_sjc.nmsl.edu.pl } }
+- name: TW01
+  type: ss
+  server: cn00.mynode.me
+  port: 8801
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: JP01
+  type: ss
+  server: cn00.mynode.me
+  port: 8802
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: US01
+  type: ss
+  server: cn00.mynode.me
+  port: 8803
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港01
+  type: ss
+  server: cn01.mynode.me
+  port: 8101
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港02
+  type: ss
+  server: cn01.mynode.me
+  port: 8102
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港03
+  type: ss
+  server: cn01.mynode.me
+  port: 8103
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港04
+  type: ss
+  server: cn02.mynode.me
+  port: 8104
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港05
+  type: ss
+  server: cn02.mynode.me
+  port: 8105
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港06
+  type: ss
+  server: cn02.mynode.me
+  port: 8106
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港07
+  type: ss
+  server: cn02.mynode.me
+  port: 8107
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港08
+  type: ss
+  server: cn02.mynode.me
+  port: 8108
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港09
+  type: ss
+  server: cn02.mynode.me
+  port: 8109
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港10
+  type: ss
+  server: cn02.mynode.me
+  port: 8110
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港11
+  type: ss
+  server: cn03.mynode.me
+  port: 8111
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港12
+  type: ss
+  server: cn03.mynode.me
+  port: 8112
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港13
+  type: ss
+  server: cn03.mynode.me
+  port: 8113
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港14
+  type: ss
+  server: cn03.mynode.me
+  port: 8114
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港15
+  type: ss
+  server: cn03.mynode.me
+  port: 8115
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港16
+  type: ss
+  server: cn04.mynode.me
+  port: 8116
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港17
+  type: ss
+  server: cn04.mynode.me
+  port: 8117
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港18
+  type: ss
+  server: cn04.mynode.me
+  port: 8118
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港19
+  type: ss
+  server: cn04.mynode.me
+  port: 8119
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港20
+  type: ss
+  server: cn04.mynode.me
+  port: 8120
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港21
+  type: ss
+  server: cn05.mynode.me
+  port: 8121
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港22
+  type: ss
+  server: cn05.mynode.me
+  port: 8122
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港23
+  type: ss
+  server: cn05.mynode.me
+  port: 8123
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港24
+  type: ss
+  server: cn05.mynode.me
+  port: 8124
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港25
+  type: ss
+  server: cn05.mynode.me
+  port: 8125
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 香港26
+  type: ss
+  server: cn05.mynode.me
+  port: 8126
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 菲律宾01
+  type: ss
+  server: cn06.mynode.me
+  port: 8231
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 菲律宾02
+  type: ss
+  server: cn06.mynode.me
+  port: 8232
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 菲律宾03
+  type: ss
+  server: cn06.mynode.me
+  port: 8233
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡01
+  type: ss
+  server: cn06.mynode.me
+  port: 8201
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡02
+  type: ss
+  server: cn06.mynode.me
+  port: 8202
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡03
+  type: ss
+  server: cn06.mynode.me
+  port: 8203
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡04
+  type: ss
+  server: cn06.mynode.me
+  port: 8204
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡05
+  type: ss
+  server: cn06.mynode.me
+  port: 8205
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡06
+  type: ss
+  server: cn07.mynode.me
+  port: 8206
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡07
+  type: ss
+  server: cn07.mynode.me
+  port: 8207
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡08
+  type: ss
+  server: cn07.mynode.me
+  port: 8208
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡09
+  type: ss
+  server: cn08.mynode.me
+  port: 8209
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡10
+  type: ss
+  server: cn08.mynode.me
+  port: 8210
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡11
+  type: ss
+  server: cn08.mynode.me
+  port: 8211
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡12
+  type: ss
+  server: cn08.mynode.me
+  port: 8212
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡13
+  type: ss
+  server: cn08.mynode.me
+  port: 8213
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡14
+  type: ss
+  server: cn09.mynode.me
+  port: 8214
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡15
+  type: ss
+  server: cn09.mynode.me
+  port: 8215
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡16
+  type: ss
+  server: cn09.mynode.me
+  port: 8216
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡17
+  type: ss
+  server: cn09.mynode.me
+  port: 8217
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 新加坡18
+  type: ss
+  server: cn09.mynode.me
+  port: 8218
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 台湾省01
+  type: ss
+  server: cn10.mynode.me
+  port: 8301
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 台湾省02
+  type: ss
+  server: cn10.mynode.me
+  port: 8302
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 台湾省03
+  type: ss
+  server: cn10.mynode.me
+  port: 8303
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 台湾省04
+  type: ss
+  server: cn10.mynode.me
+  port: 8304
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 台湾省05
+  type: ss
+  server: cn10.mynode.me
+  port: 8305
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 台湾省06
+  type: ss
+  server: cn10.mynode.me
+  port: 8306
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本01
+  type: ss
+  server: cn11.mynode.me
+  port: 8401
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本02
+  type: ss
+  server: cn11.mynode.me
+  port: 8402
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本03
+  type: ss
+  server: cn11.mynode.me
+  port: 8403
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本04
+  type: ss
+  server: cn12.mynode.me
+  port: 8404
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本05
+  type: ss
+  server: cn12.mynode.me
+  port: 8405
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本06
+  type: ss
+  server: cn12.mynode.me
+  port: 8406
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本07
+  type: ss
+  server: cn12.mynode.me
+  port: 8407
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本08
+  type: ss
+  server: cn13.mynode.me
+  port: 8408
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本09
+  type: ss
+  server: cn13.mynode.me
+  port: 8409
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本10
+  type: ss
+  server: cn14.mynode.me
+  port: 8410
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本11
+  type: ss
+  server: cn14.mynode.me
+  port: 8411
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本12
+  type: ss
+  server: cn14.mynode.me
+  port: 8412
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 日本13
+  type: ss
+  server: cn14.mynode.me
+  port: 8413
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国01
+  type: ss
+  server: cn15.mynode.me
+  port: 8501
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国02
+  type: ss
+  server: cn15.mynode.me
+  port: 8502
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国03
+  type: ss
+  server: cn15.mynode.me
+  port: 8503
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国04
+  type: ss
+  server: cn15.mynode.me
+  port: 8504
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国05
+  type: ss
+  server: cn15.mynode.me
+  port: 8505
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国06
+  type: ss
+  server: cn15.mynode.me
+  port: 8506
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国07
+  type: ss
+  server: cn16.mynode.me
+  port: 8507
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国08
+  type: ss
+  server: cn16.mynode.me
+  port: 8508
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国09
+  type: ss
+  server: cn16.mynode.me
+  port: 8509
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国10
+  type: ss
+  server: cn16.mynode.me
+  port: 8510
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国11
+  type: ss
+  server: cn16.mynode.me
+  port: 8511
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国12
+  type: ss
+  server: cn16.mynode.me
+  port: 8512
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国13
+  type: ss
+  server: cn16.mynode.me
+  port: 8513
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国14
+  type: ss
+  server: cn16.mynode.me
+  port: 8514
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国15
+  type: ss
+  server: cn16.mynode.me
+  port: 8515
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国16
+  type: ss
+  server: cn16.mynode.me
+  port: 8516
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国17
+  type: ss
+  server: cn16.mynode.me
+  port: 8517
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国18
+  type: ss
+  server: cn16.mynode.me
+  port: 8518
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国19
+  type: ss
+  server: cn18.mynode.me
+  port: 8519
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国20
+  type: ss
+  server: cn18.mynode.me
+  port: 8520
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国21
+  type: ss
+  server: cn18.mynode.me
+  port: 8521
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 美国22
+  type: ss
+  server: cn18.mynode.me
+  port: 8522
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 英国01
+  type: ss
+  server: cn17.mynode.me
+  port: 8601
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 韩国
+  type: ss
+  server: cn17.mynode.me
+  port: 8602
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 澳洲
+  type: ss
+  server: cn17.mynode.me
+  port: 8603
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 荷兰
+  type: ss
+  server: cn17.mynode.me
+  port: 8604
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 德国
+  type: ss
+  server: cn17.mynode.me
+  port: 8605
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 印度
+  type: ss
+  server: cn17.mynode.me
+  port: 8606
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 巴西
+  type: ss
+  server: cn17.mynode.me
+  port: 8607
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 法国
+  type: ss
+  server: cn17.mynode.me
+  port: 8610
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 越南
+  type: ss
+  server: cn17.mynode.me
+  port: 8622
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 埃及
+  type: ss
+  server: cn17.mynode.me
+  port: 8623
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 泰国
+  type: ss
+  server: cn17.mynode.me
+  port: 8616
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 土耳其
+  type: ss
+  server: cn17.mynode.me
+  port: 8608
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 阿根廷
+  type: ss
+  server: cn17.mynode.me
+  port: 8609
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 加拿大
+  type: ss
+  server: cn17.mynode.me
+  port: 8612
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 俄罗斯
+  type: ss
+  server: cn17.mynode.me
+  port: 8613
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 以色列
+  type: ss
+  server: cn17.mynode.me
+  port: 8615
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 意大利
+  type: ss
+  server: cn17.mynode.me
+  port: 8624
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 马来西亚
+  type: ss
+  server: cn17.mynode.me
+  port: 8618
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 澳大利亚
+  type: ss
+  server: cn17.mynode.me
+  port: 8625
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 巴基斯坦
+  type: ss
+  server: cn17.mynode.me
+  port: 8614
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 哥伦比亚
+  type: ss
+  server: cn17.mynode.me
+  port: 8619
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+- name: 尼日利亚
+  type: ss
+  server: cn17.mynode.me
+  port: 8625
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
