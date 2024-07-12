@@ -15,30 +15,30 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 香港s1, type: ss, server: sa.shakalaka.xyz, port: 13206, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 香港s2, type: ss, server: sa.shakalaka.xyz, port: 13207, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 台湾01, type: ss, server: sa.shakalaka.xyz, port: 11086, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 台湾02, type: ss, server: sa.shakalaka.xyz, port: 11087, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 韩国01, type: ss, server: pj.shakalaka.xyz, port: 11789, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 韩国02, type: ss, server: pj.shakalaka.xyz, port: 11789, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 新加坡01, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 新加坡02, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 新加坡03, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 新加坡04, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 美国01, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 美国02, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 美国03, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 美国04, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 荷兰01, type: ss, server: sa.shakalaka.xyz, port: 33156, cipher: chacha20-ietf-poly1305, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 荷兰02, type: ss, server: sa.shakalaka.xyz, port: 33156, cipher: chacha20-ietf-poly1305, password: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, udp: true }
-    - { name: 日本01, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: vm.sharesomefun.com } }, ws-path: /, ws-headers: { Host: vm.sharesomefun.com } }
-    - { name: 日本02, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: vm.sharesomefun.com } }, ws-path: /, ws-headers: { Host: vm.sharesomefun.com } }
-    - { name: 日本03, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 日本04, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: vm.sharesomefun.com } }, ws-path: /, ws-headers: { Host: vm.sharesomefun.com } }
-    - { name: 香港01, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 香港02, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 香港03, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 香港04, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: 07ba9186-fd40-46ee-abf5-2cf1b4f13514, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 香港s1, type: ss, server: sa.shakalaka.xyz, port: 13206, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 香港s2, type: ss, server: sa.shakalaka.xyz, port: 13207, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 台湾01, type: ss, server: sa.shakalaka.xyz, port: 11086, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 台湾02, type: ss, server: sa.shakalaka.xyz, port: 11087, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 韩国01, type: ss, server: pj.shakalaka.xyz, port: 11789, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 韩国02, type: ss, server: pj.shakalaka.xyz, port: 11789, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 新加坡01, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 新加坡02, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 新加坡03, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 新加坡04, type: ss, server: sa.shakalaka.xyz, port: 16789, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 美国01, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 美国02, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 美国03, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 美国04, type: ss, server: pj.shakalaka.xyz, port: 36404, cipher: aes-128-gcm, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 荷兰01, type: ss, server: sa.shakalaka.xyz, port: 33156, cipher: chacha20-ietf-poly1305, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 荷兰02, type: ss, server: sa.shakalaka.xyz, port: 33156, cipher: chacha20-ietf-poly1305, password: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, udp: true }
+    - { name: 日本01, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: vm.sharesomefun.com } }, ws-path: /, ws-headers: { Host: vm.sharesomefun.com } }
+    - { name: 日本02, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: vm.sharesomefun.com } }, ws-path: /, ws-headers: { Host: vm.sharesomefun.com } }
+    - { name: 日本03, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 日本04, type: vmess, server: pj.shakalaka.xyz, port: 19901, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: vm.sharesomefun.com } }, ws-path: /, ws-headers: { Host: vm.sharesomefun.com } }
+    - { name: 香港01, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 香港02, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 香港03, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 香港04, type: vmess, server: sa.shakalaka.xyz, port: 12306, uuid: f8a845c3-f8dc-4ca2-b178-0af8c35386f4, alterId: 0, cipher: auto, udp: true, network: ws }
 
     - { name: '荷兰01 | Global |  0.3X', type: vmess, server: fbi.gov, port: 80, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: nl_v1.nmsl.edu.pl } }, ws-path: /, ws-headers: { Host: nl_v1.nmsl.edu.pl } }
     - { name: '1元 | 美国 | 0.1X', type: ss, server: 888.888888.wtf, port: 35280, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
