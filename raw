@@ -15,31 +15,66 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - {name: 🇷🇺 V1-俄罗斯01 CDN隧道 1.2x, server: in06.dns2024.org, port: 63009, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇨🇦 V1-加拿大A CDN隧道 1.5x, server: in06.dns2024.org, port: 63013, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇮🇳 V1-印度01 CDN隧道 1.5x, server: in06.dns2024.org, port: 63051, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇨🇳 V1-台湾01 隧道 1.5x, server: in06.dns2024.org, port: 63018, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x, server: tw99.jinkela2024vpn.xyz, port: 3283, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-    - {name: 🇹🇷 V1-土耳其 隧道 1.5x, server: in06.dns2024.org, port: 63015, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇩🇪 V1-德国01 CDN隧道 1.5x, server: in06.dns2024.org, port: 63092, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: de01-cdn.airport-v2.com}}}
-    - {name: 🇸🇬 V1-新加坡 隧道 均衡负载 动态IP 1.3x, server: in06.dns2024.org, port: 63012, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇯🇵 V1-日本A 隧道 1.6x, server: in06.dns2024.org, port: 63011, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp-a-mugua.weibo-cdn.best}}}
-    - {name: V1-波兰01 隧道 2x, server: in06.dns2024.org, port: 63006, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pl01.tencent.best}}}
-    - {name: V1-澳洲01 隧道 | 2x, server: in06.dns2024.org, port: 63003, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇺🇲 V1-美国 隧道 均衡负载 动态IP 1.3x, server: in06.dns2024.org, port: 63004, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇺🇲 V1-美国01 隧道 1.5x, server: in06.dns2024.org, port: 63014, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇺🇲 V1-美国03 隧道 1.5x, server: in06.dns2024.org, port: 63016, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇬🇧 V1-英国01 CDN隧道 1.5x, server: in06.dns2024.org, port: 63007, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇰🇷 V1-韩国01 隧道 1.5x, server: in06.dns2024.org, port: 63097, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇭🇰 V1-香港A 隧道 1.6x, server: in06.dns2024.org, port: 63099, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇭🇰 V1-香港HKT02 隧道  原生家宽 2x, server: in06.dns2024.org, port: 63019, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇭🇰 V1-香港HKT03 隧道 2x, server: in06.dns2024.org, port: 63082, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇲🇾 V1-马来西亚01 隧道 2x, server: in06.dns2024.org, port: 63020, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇨🇳 V2-台湾11 套娃 中继 1.5x, server: in06.dns2024.org, port: 63017, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇸🇬 V2-新加坡06 套娃 中继 1.5x, server: in06.dns2024.org, port: 63008, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇦🇷 V2-阿根廷01 CDN隧道 冷门 2x, server: in06.dns2024.org, port: 63001, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ag01-cdn.myn1des.com}}}
-    - {name: 🇭🇰 V2-香港B 隧道 1.6x, server: in06.dns2024.org, port: 63010, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-    - {name: 🇭🇰 V2-香港FDC01 隧道 2x, server: in06.dns2024.org, port: 63090, type: vmess, uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+    - {name: LAX-Akari-D, server: 36.158.206.107, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: LAX-Akari-D 2, server: 36.158.206.107, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: Tokyo-Akari-D, server: 36.158.206.107, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: Tokyo-Akari-D 2, server: 36.158.206.107, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 台北Akari-D, server: 36.158.206.107, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 台北Akari-D 2, server: 36.158.206.107, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇭🇰 香港Hytron-P, server: 36.158.206.107, port: 61007, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇭🇰 香港Hytron-P 2, server: 36.158.206.107, port: 61008, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇸🇬 Singapore-Akari-D, server: 36.158.206.107, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇸🇬 Singapore-Akari-D 2, server: 36.158.206.107, port: 61020, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: LAX-Akari-D 3, server: 36.158.206.107, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: LAX-Akari-D 4, server: 36.158.206.107, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: Tokyo-Akari-D 3, server: 36.158.206.107, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: Tokyo-Akari-D 4, server: 36.158.206.107, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 台北Akari-D 3, server: 36.158.206.107, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 台北Akari-D 4, server: 36.158.206.107, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇭🇰 香港Hytron-P 3, server: 36.158.206.107, port: 61007, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇭🇰 香港Hytron-P 4, server: 36.158.206.107, port: 61008, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇸🇬 Singapore-Akari-D 3, server: 36.158.206.107, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇸🇬 Singapore-Akari-D 4, server: 36.158.206.107, port: 61020, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: LAX-Akari-D 5, server: 36.158.206.107, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: LAX-Akari-D 6, server: 36.158.206.107, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: Tokyo-Akari-D 5, server: 36.158.206.107, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: Tokyo-Akari-D 6, server: 36.158.206.107, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 台北Akari-D 5, server: 36.158.206.107, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 台北Akari-D 6, server: 36.158.206.107, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇭🇰 香港Hytron-P 5, server: 36.158.206.107, port: 61007, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇭🇰 香港Hytron-P 6, server: 36.158.206.107, port: 61008, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇸🇬 Singapore-Akari-D 5, server: 36.158.206.107, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇸🇬 Singapore-Akari-D 6, server: 36.158.206.107, port: 61020, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: LAX-Akari-D 7, server: 120.233.204.80, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: LAX-Akari-D 8, server: 120.233.204.80, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: Tokyo-Akari-D 7, server: 120.233.204.80, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: Tokyo-Akari-D 8, server: 120.233.204.80, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 台北Akari-D 7, server: 120.233.204.80, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 台北Akari-D 8, server: 120.233.204.80, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇭🇰 香港Hytron-P 7, server: 120.233.204.80, port: 61007, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇭🇰 香港Hytron-P 8, server: 120.233.204.80, port: 61008, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇸🇬 Singapore-Akari-D 7, server: 120.233.204.80, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: 🇸🇬 Singapore-Akari-D 8, server: 120.233.204.80, port: 61020, type: ss, cipher: chacha20-ietf-poly1305, password: 219308ae-9f94-3740-a310-084034377bda}
+    - {name: LAX-Akari-D 9, server: 120.233.204.80, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: LAX-Akari-D 10, server: 120.233.204.80, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: Tokyo-Akari-D 9, server: 120.233.204.80, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: Tokyo-Akari-D 10, server: 120.233.204.80, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 台北Akari-D 9, server: 120.233.204.80, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 台北Akari-D 10, server: 120.233.204.80, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇭🇰 香港Hytron-P 9, server: 120.233.204.80, port: 61007, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇭🇰 香港Hytron-P 10, server: 120.233.204.80, port: 61008, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇸🇬 Singapore-Akari-D 9, server: 120.233.204.80, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: 🇸🇬 Singapore-Akari-D 10, server: 120.233.204.80, port: 61020, type: ss, cipher: chacha20-ietf-poly1305, password: a17435eb-41f8-3a6b-9108-99cfd3e30993}
+    - {name: LAX-Akari-D 11, server: 120.233.204.80, port: 60004, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: LAX-Akari-D 12, server: 120.233.204.80, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: Tokyo-Akari-D 11, server: 120.233.204.80, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: Tokyo-Akari-D 12, server: 120.233.204.80, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 台北Akari-D 11, server: 120.233.204.80, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 台北Akari-D 12, server: 120.233.204.80, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇭🇰 香港Hytron-P 11, server: 120.233.204.80, port: 61007, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇭🇰 香港Hytron-P 12, server: 120.233.204.80, port: 61008, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇸🇬 Singapore-Akari-D 11, server: 120.233.204.80, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
+    - {name: 🇸🇬 Singapore-Akari-, server: 120.233.204.80, port: 61020, type: ss, cipher: chacha20-ietf-poly1305, password: a2c791a3-b846-4429-9b5a-32003a6bf733}
 
     - { name: '台湾03 | 家宽 | 杭州电信[下载专用] | 0.5X', type: vmess, server: 02fuzai.rvxpwa.tech, port: 15004, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true }
     - { name: '1元 | 香港 | 1X', type: ss, server: 120.199.90.247, port: 44207, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
