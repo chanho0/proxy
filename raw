@@ -15,7 +15,12 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-
+    - { name: '电信/联通推荐 | 🇺🇸美国洛杉矶01-hy2', server: 108.181.23.71, port: 35000, ports: 35000-39000, mport: 35000-39000, udp: true, skip-cert-verify: true, sni: tv.apple.com, type: hysteria2, password: 4183a7a8-c655-416b-9b6f-e391059a17c6 }
+    - { name: '电信/联通推荐 | 🇺🇸美国洛杉矶02-hy2', server: 108.181.23.225, port: 35000, ports: 35000-39000, mport: 35000-39000, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 4183a7a8-c655-416b-9b6f-e391059a17c6 }
+    - { name: '电信/联通推荐 | 🇺🇸美国洛杉矶03-hy2', server: 108.181.23.247, port: 35000, ports: 35000-39000, mport: 35000-39000, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 4183a7a8-c655-416b-9b6f-e391059a17c6 }
+    - { name: '电信/联通推荐 | 🇺🇸美国洛杉矶04-hy2', server: 108.181.23.253, port: 35000, ports: 35000-39000, mport: 35000-39000, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 4183a7a8-c655-416b-9b6f-e391059a17c6 }
+    - { name: '电信/联通推荐 | 🇺🇸美国洛杉矶05-hy2', server: 208.87.243.155, port: 35000, ports: 35000-39000, mport: 35000-39000, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 4183a7a8-c655-416b-9b6f-e391059a17c6 }
+   
     - { name: '台湾03 | 家宽 | 杭州电信[下载专用] | 0.5X', type: vmess, server: 02fuzai.rvxpwa.tech, port: 15004, uuid: 0ad244fc-c969-4690-b754-c1bd6a937c1f, alterId: 0, cipher: auto, udp: true }
     - { name: '1元 | 香港 | 1X', type: ss, server: 120.199.90.247, port: 44207, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
     - { name: '1元 | 加拿大 | 1X', type: ss, server: 888.888888.wtf, port: 27571, cipher: aes-128-gcm, password: 0ad244fc-c969-4690-b754-c1bd6a937c1f, udp: true }
