@@ -98,7 +98,7 @@ proxies:
     - { name: 🇬🇧英国伦敦2, type: vless, server: 130.162.163.216, port: 443, uuid: 96657c21-8fc3-47b2-9577-fda7d2f05e1d, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: ios, servername: dcpqgbs.hnkkt.com }
     - { name: 🇩🇪德国2, type: vless, server: 144.24.168.26, port: 443, uuid: 96657c21-8fc3-47b2-9577-fda7d2f05e1d, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: ios, servername: dcpqdes.hnkkt.com }
 
-     - { name: 🇺🇸美国洛杉矶1号, server: 108.181.24.53, port: 50000, ports: 50000-53000, mport: 50000-53000, udp: true, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, password: afe5bb7c-e0f4-43a4-8cc3-52cd47ec6218 }
+    - { name: 🇺🇸美国洛杉矶1号, server: 108.181.24.53, port: 50000, ports: 50000-53000, mport: 50000-53000, udp: true, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, password: afe5bb7c-e0f4-43a4-8cc3-52cd47ec6218 }
     - { name: 🇺🇸美国洛杉矶2号, server: 108.181.23.123, port: 50000, ports: 50000-53000, mport: 50000-53000, udp: true, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, password: afe5bb7c-e0f4-43a4-8cc3-52cd47ec6218 }
     - { name: 🇺🇸美国洛杉矶3号, server: 108.181.23.231, port: 50000, ports: 50000-53000, mport: 50000-53000, udp: true, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, password: afe5bb7c-e0f4-43a4-8cc3-52cd47ec6218 }
     - { name: 🇸🇬新加坡, server: 158.178.233.96, port: 50000, ports: 50000-53000, mport: 50000-53000, udp: true, skip-cert-verify: true, sni: www.microsoft.com, type: hysteria2, password: afe5bb7c-e0f4-43a4-8cc3-52cd47ec6218 }
